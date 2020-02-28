@@ -13,4 +13,9 @@ public interface CmsPrefrenceAreaService {
      * 获取所有优选专区
      */
     List<CmsPrefrenceArea> listAll();
+
+    /**
+     * 根据id获取指定优选商品
+     */
+    CmsPrefrenceArea getPrefrence(Long id);
 }

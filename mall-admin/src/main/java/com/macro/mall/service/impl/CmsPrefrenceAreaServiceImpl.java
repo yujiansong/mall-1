@@ -22,4 +22,9 @@ public class CmsPrefrenceAreaServiceImpl implements CmsPrefrenceAreaService {
     public List<CmsPrefrenceArea> listAll() {
         return prefrenceAreaMapper.selectByExample(new CmsPrefrenceAreaExample());
     }
+
+    @Override
+    public CmsPrefrenceArea getPrefrence(Long id) {
+        return prefrenceAreaMapper.selectByPrimaryKey(id);
+    }
 }
