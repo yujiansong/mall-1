@@ -40,8 +40,8 @@ secure:
 aliyun:
   oss:
     endpoint: oss-cn-shenzhen.aliyuncs.com # oss对外服务的访问域名
-    accessKeyId: LTAI4Ftbwqio2LkLCzzMapwK # 访问身份验证中用到用户标识
-    accessKeySecret: 5kySPYKuwF10tCfW6LrRpscIuR8x6S # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
+    accessKeyId:  # 访问身份验证中用到用户标识  LTAI4Ftbwqio2LkLCzzMapwK
+    accessKeySecret:  # 用户用于加密签名字符串和oss用来验证签名字符串的密钥 5kySPYKuwF10tCfW6LrRpscIuR8x6S
     bucketName: yjs-oss # oss的存储空间
     policy:
       expire: 300 # 签名有效期(S)
