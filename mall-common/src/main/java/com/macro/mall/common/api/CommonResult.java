@@ -5,8 +5,17 @@ package com.macro.mall.common.api;
  * Created by macro on 2019/4/19.
  */
 public class CommonResult<T> {
+    /**
+     * 状态码
+     */
     private long code;
+    /**
+     * 提示信息
+     */
     private String message;
+    /**
+     * 数据封装
+     */
     private T data;
 
     protected CommonResult() {
@@ -43,6 +52,15 @@ public class CommonResult<T> {
      */
     public static <T> CommonResult<T> failed(IErrorCode errorCode) {
         return new CommonResult<T>(errorCode.getCode(), errorCode.getMessage(), null);
+    }
+
+    /**
+     * 失败返回结果
+     * @param errorCode 错误码
+     * @param message 错误信息
+     */
+    public static <T> CommonResult<T> failed(IErrorCode errorCode,String message) {
+        return new CommonResult<T>(errorCode.getCode(), message, null);
     }
 
     /**
