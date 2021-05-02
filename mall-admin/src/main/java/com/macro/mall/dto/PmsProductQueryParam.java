@@ -23,4 +23,6 @@ public class PmsProductQueryParam {
     private Long productCategoryId;
     @ApiModelProperty("商品品牌编号")
     private Long brandId;
+    @ApiModelProperty("是否是新品")
+    private Integer newStatus;
 }
